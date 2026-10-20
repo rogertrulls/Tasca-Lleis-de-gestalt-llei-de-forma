@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Llei de la Forma</title>
+
+  <!-- BOOTSTRAP 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS PERSONALITZAT -->
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+  <!-- CONTENIDOR PRINCIPAL (Bootstrap container) -->
+  <div class="container py-4 app-layout">
+
+    <!-- 1. CAPÇALERA: Forma superior única i tancada -->
+    <header class="card border-0 shadow-sm mb-4">
+      <div class="card-body d-flex flex-wrap align-items-center justify-content-between gap-3">
+
+        <!-- Brand / Logo -->
+        <div class="d-flex align-items-center gap-2">
+          <div class="bg-primary text-white rounded-3 d-flex align-items-center justify-content-center fw-bold"
+            style="width: 36px; height: 36px;">
+            G
+          </div>
+          <span class="fw-bold fs-5 text-dark">GestaltUI</span>
+        </div>
+
+        <!-- Cerca en píndola (Bona forma) -->
+        <div class="search-box flex-grow-1 mx-md-4" style="max-width: 400px;">
+          <div class="input-group">
+            <span class="input-group-text bg-light border-end-0 rounded-start-pill ps-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg>
+            </span>
+            <input type="text" class="form-control bg-light border-start-0 rounded-end-pill shadow-none"
+              placeholder="Cercar projectes o components...">
+          </div>
+        </div>
+
+        <!-- Usuari / Notificacions -->
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+            style="width: 38px; height: 38px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill text-primary" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+</svg>
+          </button>
+          <div
+            class="bg-primary-subtle text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 38px; height: 38px; font-size: 0.9rem;">
+            RT
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- 2. PANEC D'ESTADÍSTIQUES: Mètriques en Grid de Bootstrap -->
+    <section class="row g-3 mb-4">
+
+      <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <span class="text-secondary small d-block mb-1">Projectes Actius</span>
+            <strong class="fs-3 fw-bold text-dark">12</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <span class="text-secondary small d-block mb-1">Tasques Completes</span>
+            <strong class="fs-3 fw-bold text-dark">84%</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <span class="text-secondary small d-block mb-1">Càrrega Cognitiva</span>
+            <strong class="fs-5 fw-bold text-success">Optimitza (-40%)</strong>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3. CONTINGUT PRINCIPAL: Targetes simètriques en Grid -->
+    <main class="row g-4">
+
+      <!-- Targeta 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card border-0 shadow-sm h-100 d-flex flex-column justify-content-between">
+          <div class="card-body">
+            <span class="badge bg-primary-subtle text-primary mb-2">UI/UX</span>
+            <h2 class="card-title h5 text-dark fw-bold mb-2">Sistema de Components</h2>
+            <p class="card-text text-secondary small">
+              Organització modular d'elements geomètrics reutilitzables per a interfícies web.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-top pt-3 d-flex align-items-center justify-content-between">
+            <span class="text-muted small">En curs</span>
+            <button class="btn btn-primary btn-sm px-3 fw-semibold">Veure detall</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Targeta 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card border-0 shadow-sm h-100 d-flex flex-column justify-content-between">
+          <div class="card-body">
+            <span class="badge bg-primary-subtle text-primary mb-2">Gestalt</span>
+            <h2 class="card-title h5 text-dark fw-bold mb-2">Llei de Prägnanz</h2>
+            <p class="card-text text-secondary small">
+              Estructuració de patrons de cerca i filtres mitjançant formes simples i simètriques.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-top pt-3 d-flex align-items-center justify-content-between">
+            <span class="text-muted small">Completat</span>
+            <button class="btn btn-primary btn-sm px-3 fw-semibold">Veure detall</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Targeta 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card border-0 shadow-sm h-100 d-flex flex-column justify-content-between">
+          <div class="card-body">
+            <span class="badge bg-primary-subtle text-primary mb-2">Frontend</span>
+            <h2 class="card-title h5 text-dark fw-bold mb-2">Maquetació Bootstrap</h2>
+            <p class="card-text text-secondary small">
+              Distribució regular d'elements per maximitzar l'alineació visual i la llegibilitat.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-top pt-3 d-flex align-items-center justify-content-between">
+            <span class="text-muted small">Revisió</span>
+            <button class="btn btn-primary btn-sm px-3 fw-semibold">Veure detall</button>
+          </div>
+        </article>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
