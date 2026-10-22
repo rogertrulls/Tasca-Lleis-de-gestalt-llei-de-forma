@@ -1,0 +1,29 @@
+/* Configuració del fons psicodèlic fix */
+body {
+background-image: url('../assets/background.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: 'Times New Roman', Times, serif, system-ui, sans-serif;
+  color: #000000;
+  min-height: 100vh;
+}
+
+/* Contenidor principal amb capa translúcida per garantir llegibilitat */
+.container {
+  background-color: rgba(255, 255, 255, 0.788);
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Assegurar que els inputs i elements tinguin fons legible */
+input.form-control, input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Efectes de text per destacar sobre qualsevol petit residu visual */
+h1, h2, h5, .display-3, .display-4 {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
